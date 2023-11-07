@@ -1,0 +1,10 @@
+#chat {
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid #ffee00;
+  background-color: #fff9a2;
+  overflow-y: scroll;
+  position: absolute;
+  top: 20rem;
+  left: 30rem;
+}

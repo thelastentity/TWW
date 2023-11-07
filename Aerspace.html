@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerspace</title>
+    <link rel="stylesheet" href="Aerspace.css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <div id="chat"></div>
+    <div id="caixatexto">
+      <input type="text" id="mensagem" placeholder="Digite sua mensagem" />
+      <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+    <script id="caixatexto">
+      function enviarMensagem() {
+        const mensagem = document.getElementById("mensagem").value;
+        document.getElementById("chat").innerHTML += `<p>You: ${mensagem}</p>`;
+        document.getElementById("mensagem").value = ""; // Limpa o campo de entrada
+      }
+    </script>
+    <header>
+      <div id="linklogo">
+        <a href="HomePage.html"
+          ><img src="TWW logo.png" alt="" width="200" height="80"
+        /></a>
+      </div>
+
+      <div id="h1"><h1>Aerspace</h1></div>
+    </header>
+    <div id="barra_left"></div>
+    <div id="barra_right"></div>
+    <div id="header"></div>
+
+    <main>
+      <div id="personal"><h2>Basic Data</h2></div>
+      <div id="personalData">
+        <p>Full Name: Aeryyn Wilhelm von Schwaizen</p>
+        <p>Age: 16</p>
+        <p>Born: 21/06/2007</p>
+      </div>
+
+      <div id="body"><h2>Body Data</h2></div>
+
+      <div id="body_data">
+        <p>Heigt: 1,53 m</p>
+        <p>Weight: 34 kg</p>
+        <p>BMI: 14,52</p>
+        <p>Bust: 77</p>
+        <p>Waist: 53</p>
+        <p>Hips: 80</p>
+        <p>Hair Color: Blonde</p>
+        <p>Eyes Color: Blue</p>
+        <p>Skin Color: White</p>
+      </div>
+
+      <div id="realms"><h2>Real Realm x Mental Realm</h2></div>
+      <div id="realmcontent">
+        <p>
+          In the Aerspace, there are two realms, the Real Realm and <br />
+          the Mental Realm.
+        </p>
+        <br />
+        <p>
+          The Real Realm is the real world, the real life,<br />
+          where all the real events take place and real people exist
+        </p>
+        <br />
+        <p>
+          The Mental Realm is the imaginary world, where Aeryyn lives, <br />
+          a world that only exists in my mind
+        </p>
+        <br />
+        <p>
+          The physical things that exists in the Real World don´t influence
+          <br />
+          anything in the Mental Realm, wich includes smells, colors, sounds,
+          etc. <br />
+          Wich means that the two worlds don´t coexist in a physical level
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

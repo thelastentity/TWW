@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#lista_de_anos {
+  position: absolute;
+  top: 20rem;
+  left: 36rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 80px;
+}
+
+#ano2023::after {
+  content: "\2BC6";
+}

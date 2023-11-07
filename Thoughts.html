@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thoughts</title>
+    <link rel="stylesheet" href="Thoughts.css" />
+  </head>
+
+  <body>
+    <script>
+      // Função para enviar uma mensagem
+      function enviarMensagem() {
+        var mensagemInput = document.getElementById("mensagem");
+        var mensagem = mensagemInput.value;
+        mensagemInput.value = "";
+
+        if (mensagem.trim() === "") {
+          return; // Não envia mensagens em branco
+        }
+
+        var chat = document.getElementById("chat");
+        var novaMensagem = document.createElement("p");
+        novaMensagem.textContent = "You: " + mensagem;
+        chat.appendChild(novaMensagem);
+      }
+    </script>
+    <div id="linklogo">
+      <a href="HomePage.html"
+        ><img src="TWW logo.png" alt="" width="200" height="80"
+      /></a>
+    </div>
+
+    <div id="title">ShadyNook</div>
+
+    <div id="chat"></div>
+    <input type="text" id="mensagem" placeholder="Digite sua mensagem" />
+    <button onclick="enviarMensagem()">Enviar</button>
+    <div id="header"></div>
+  </body>
+</html>
